@@ -1,0 +1,11 @@
+﻿1) Single Responsability
+    Los métodos listar_peliculas, listar_funciones y guardar_entrada cumplen distintas funciones dentro de las clases
+    CinePlaneta y CineStark, violando así el principio de Single Responsability.
+
+2) Open Closed
+    Se incumple este principio ya que si quisiera crear nuevas peliculas, para poder listarlas en la cartelera,
+    tendríamos que modificar código de alguna de las dos clases de cine.
+
+3) Inversión de dependencias
+    Las clases Cine dependen de la clase película. Están instanciando objetos de la clase Película en las clases Cine,
+    lo cual demuestra claramente dicha dependencia.
